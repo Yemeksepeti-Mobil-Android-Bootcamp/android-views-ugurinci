@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewScreen3_LetsStartHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/let_s_start_here"
+        android:textColor="#2B2B2B"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewScreen3_FillInYour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/fill_in_your_details_to_begin"
+        android:textColor="#7A7A7A"
+        android:textSize="17sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldScreen3_Fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="18dp"
+        android:hint="@string/fullname"
+        android:textColorHint="#AEAEB2"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_screen3_edittext"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/cristian"
+            android:textColor="#2B2B2B"
+            android:textSize="17sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldScreen3_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="18dp"
+        android:hint="@string/e_mail"
+        android:textColorHint="#AEAEB2"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_screen3_edittext"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/cristiandeb13_gmail_com"
+            android:textColor="#2B2B2B"
+            android:textSize="17sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldScreen3_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="18dp"
+        android:hint="@string/password"
+        android:textColorHint="#AEAEB2"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_screen3_edittext"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPassword"
+            android:text="@string/_123456789"
+            android:textColor="#2B2B2B"
+            android:textSize="17sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonScreen3_SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_screen3_button"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="#F6F7FA"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewScreen3_Or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/or"
+        android:textColor="#2B2B2B"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonScreen3_Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/radius_screen3_button_facebook"
+        android:drawableStart="@drawable/facebook"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="21dp"
+        android:text="@string/connect_with_facebook"
+        android:textAllCaps="false"
+        android:textColor="#F6F7FA"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonScreen3_Google"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/radius_screen3_button_google"
+        android:drawableStart="@drawable/google"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="21dp"
+        android:text="@string/connect_with_google"
+        android:textAllCaps="false"
+        android:textColor="#2B2B2B"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textViewScreen3_PrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/by_signing_in_i_agree_with_terms_of_use_and_privacy_policy"
+        android:textColor="#B0B0B0"
+        android:textSize="13sp" />
+</LinearLayout>

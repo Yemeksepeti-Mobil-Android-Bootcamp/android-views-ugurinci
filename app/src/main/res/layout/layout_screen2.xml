@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewScreen2_WelcomeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/welcome_back"
+        android:textColor="#2E3E5C"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScreen2_PleaseEnterYour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/please_enter_your_account_here"
+        android:textColor="#9FA5C0"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_WelcomeBack" />
+
+    <EditText
+        android:id="@+id/editTextScreen2_EmailOrPhone"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/radius_screen2_edittext"
+        android:drawableStart="@drawable/ic_outline_email_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint="@string/email_or_phone_number"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_PleaseEnterYour" />
+
+    <EditText
+        android:id="@+id/editTextPasswordScreen2_Password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/radius_screen2_edittext"
+        android:drawableStart="@drawable/ic_outline_lock_24"
+        android:drawableEnd="@drawable/ic_outline_remove_red_eye_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextScreen2_EmailOrPhone" />
+
+    <TextView
+        android:id="@+id/textViewScreen2_ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/forgot_password"
+        android:textColor="#2E3E5C"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordScreen2_Password"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordScreen2_Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonScreen2_Login"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/radius_screen2_button_login"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_ForgotPassword" />
+
+    <TextView
+        android:id="@+id/textViewScreen2_OrContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/or_continue_with"
+        android:textColor="#9FA5C0"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScreen2_Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonScreen2_Google"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radius_screen2_button_google"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_OrContinue" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScreen2_Google">
+
+        <TextView
+            android:id="@+id/textViewScreen2_DontHaveAny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/don_t_have_any_account"
+            android:textColor="#2E3E5C"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewScreen2_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/sign_up"
+            android:textColor="#1FCC79"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
