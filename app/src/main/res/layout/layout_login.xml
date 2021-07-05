@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textViewScreen2_WelcomeBack"
+        android:id="@+id/textViewLoginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewScreen2_PleaseEnterYour"
+        android:id="@+id/textViewLoginDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -29,14 +29,14 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_WelcomeBack" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginTitle" />
 
     <EditText
-        android:id="@+id/editTextScreen2_EmailOrPhone"
+        android:id="@+id/editTextLoginEmailorPhone"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/radius_screen2_edittext"
+        android:background="@drawable/shape_login_edittext_round"
         android:drawableStart="@drawable/ic_outline_email_24"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -47,14 +47,14 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_PleaseEnterYour" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginDescription" />
 
     <EditText
-        android:id="@+id/editTextPasswordScreen2_Password"
+        android:id="@+id/editTextLoginPassword"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/radius_screen2_edittext"
+        android:background="@drawable/shape_login_edittext_round"
         android:drawableStart="@drawable/ic_outline_lock_24"
         android:drawableEnd="@drawable/ic_outline_remove_red_eye_24"
         android:drawablePadding="15dp"
@@ -66,10 +66,10 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextScreen2_EmailOrPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmailorPhone" />
 
     <TextView
-        android:id="@+id/textViewScreen2_ForgotPassword"
+        android:id="@+id/textViewLoginForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -77,15 +77,15 @@
         android:text="@string/forgot_password"
         android:textColor="#2E3E5C"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordScreen2_Password"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordScreen2_Password" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonScreen2_Login"
+        android:id="@+id/buttonLogin"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:background="@drawable/radius_screen2_button_login"
+        android:background="@drawable/shape_login_button_round_green"
         android:fontFamily="@font/inter_bold"
         android:text="@string/login"
         android:textAllCaps="false"
@@ -93,10 +93,10 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_ForgotPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginForgotPassword" />
 
     <TextView
-        android:id="@+id/textViewScreen2_OrContinue"
+        android:id="@+id/textViewLoginContinueWith"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -106,15 +106,15 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonScreen2_Login" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonScreen2_Google"
+        android:id="@+id/buttonLoginGoogle"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="@drawable/radius_screen2_button_google"
-        android:drawableStart="@drawable/screen2_google"
+        android:background="@drawable/shape_login_button_round_orange"
+        android:drawableStart="@drawable/ic_login_google"
         android:fontFamily="@font/inter_bold"
         android:paddingHorizontal="124dp"
         android:text="@string/google"
@@ -123,7 +123,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScreen2_OrContinue" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginContinueWith" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -132,10 +132,10 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonScreen2_Google">
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoginGoogle">
 
         <TextView
-            android:id="@+id/textViewScreen2_DontHaveAny"
+            android:id="@+id/textViewLoginDontHave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
@@ -146,7 +146,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/textViewScreen2_SignUp"
+            android:id="@+id/textViewLoginSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"

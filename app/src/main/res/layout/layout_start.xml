@@ -5,35 +5,37 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageViewScreen1_woman"
+        android:id="@+id/imageViewStartBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/woman"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/woman"
-        android:contentDescription="@string/woman" />
+        app:srcCompat="@drawable/img_start_background_woman" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/viewGuideline"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="60dp"
-        app:layout_constraintBottom_toBottomOf="@id/imageViewScreen1_woman" />
+        app:layout_constraintBottom_toBottomOf="@id/imageViewStartBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/radius_screen1"
+        android:background="@drawable/shape_start_layout_round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view">
+        app:layout_constraintTop_toBottomOf="@id/viewGuideline">
 
         <TextView
-            android:id="@+id/textViewScreen1_BestHolidayDeals"
+            android:id="@+id/textViewStartTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -46,7 +48,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textViewScreen1_FindDeals"
+            android:id="@+id/textViewStartDescription"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -57,24 +59,24 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewScreen1_BestHolidayDeals" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewStartTitle" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonScreen1_GetStarted"
+            android:id="@+id/buttonStart"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/radius_screen1_button"
+            android:background="@drawable/shape_start_button_round"
             android:fontFamily="@font/inter_medium"
             android:text="@string/get_started"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewScreen1_FindDeals" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewStartDescription" />
 
         <TextView
-            android:id="@+id/textViewScreen1_ExploreAsGuest"
+            android:id="@+id/textViewStartGuest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -84,6 +86,6 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonScreen1_GetStarted" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

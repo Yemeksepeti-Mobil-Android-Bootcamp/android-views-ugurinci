@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textViewScreen3_LetsStartHere"
+        android:id="@+id/textViewSignupTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -19,7 +19,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewScreen3_FillInYour"
+        android:id="@+id/textViewSignupDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,7 +29,7 @@
         android:textSize="17sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/filledTextFieldScreen3_Fullname"
+        android:id="@+id/filledTextFieldSignupFullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -42,7 +42,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radius_screen3_edittext"
+            android:background="@drawable/shape_signup_edittext_round"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/cristian"
             android:textColor="#2B2B2B"
@@ -50,7 +50,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/filledTextFieldScreen3_Email"
+        android:id="@+id/filledTextFieldSignupEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -63,7 +63,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radius_screen3_edittext"
+            android:background="@drawable/shape_signup_edittext_round"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/cristiandeb13_gmail_com"
             android:textColor="#2B2B2B"
@@ -71,7 +71,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/filledTextFieldScreen3_Password"
+        android:id="@+id/filledTextFieldSignupPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -85,7 +85,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radius_screen3_edittext"
+            android:background="@drawable/shape_signup_edittext_round"
             android:fontFamily="@font/poppins_medium"
             android:inputType="textPassword"
             android:text="@string/_123456789"
@@ -94,13 +94,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonScreen3_SignUp"
+        android:id="@+id/buttonSignup"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/gradient_screen3_button"
+        android:background="@drawable/shape_signup_button_gradient"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up"
         android:textAllCaps="false"
@@ -109,7 +109,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewScreen3_Or"
+        android:id="@+id/textViewSignupOr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -120,14 +120,14 @@
         android:textSize="17sp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonScreen3_Facebook"
+        android:id="@+id/buttonSignupFacebook"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/radius_screen3_button_facebook"
-        android:drawableStart="@drawable/facebook"
+        android:background="@drawable/shape_signup_button_round_facebook"
+        android:drawableStart="@drawable/ic_signup_facebook"
         android:fontFamily="@font/poppins_medium"
         android:paddingHorizontal="21dp"
         android:text="@string/connect_with_facebook"
@@ -136,14 +136,14 @@
         android:textSize="17sp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonScreen3_Google"
+        android:id="@+id/buttonSignupGoogle"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/radius_screen3_button_google"
-        android:drawableStart="@drawable/screen3_google"
+        android:background="@drawable/shape_signup_button_round_google"
+        android:drawableStart="@drawable/ic_signup_google"
         android:fontFamily="@font/poppins_medium"
         android:paddingHorizontal="21dp"
         android:text="@string/connect_with_google"
@@ -152,7 +152,7 @@
         android:textSize="17sp" />
 
     <TextView
-        android:id="@+id/textViewScreen3_PrivacyPolicy"
+        android:id="@+id/textViewSignupPrivacyPolicy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
